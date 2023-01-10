@@ -231,6 +231,18 @@ span{
     .res-img{
           width: 100%;
     }
+    .startersAndMain, .dinnerAndDesert{
+        flex-direction: column;
+    }
+    .breakfast, .dinner, .desert, .main{
+        width: 80%;
+        padding: 2%;
+    }
+    .price{
+        margin-top: 20px;
+        margin-bottom: 160px;
+        font-size: 18px;
+    }
 
 }
 
@@ -264,6 +276,18 @@ span{
     .res-img{
           width: 80%;
     }
+
+    .breakfast, .dinner, .desert, .main{
+        width: 50%;
+        padding: 2%;
+    }
+
+    .price{
+        margin-top: 20px;
+        margin-bottom: 170px;
+        font-size: 18px;
+    }
+    
 
    
 
