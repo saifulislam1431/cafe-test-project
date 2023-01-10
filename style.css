@@ -12,6 +12,7 @@
 .header{
     background-image: url(/img/bg.jpg),linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,0));
     background-blend-mode: overlay;
+    width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
     
@@ -98,8 +99,6 @@ span{
 .special-items{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    align-items: center;
-    justify-content: center;
     margin: 20px 0;
    
 }
@@ -120,7 +119,7 @@ span{
 }
 
 
-/* Media Qurey */
+/* Media Query */
 
 @media screen and (max-width:576px){
 
@@ -141,8 +140,6 @@ span{
         text-align: center;
         padding-top: 60%;
     }
-
-
 
     .special-items{
         grid-template-columns: repeat(1,1fr);
@@ -169,8 +166,7 @@ span{
     }
 
     .special-items{
-        grid-template-columns: repeat(2,1fr);
-        
+        grid-template-columns: repeat(2,1fr);       
         align-items: center;
         justify-content: center;
     }
