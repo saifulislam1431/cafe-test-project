@@ -67,6 +67,19 @@
     color: rgb(255, 255, 255);
 }
 
+.btn-secondary{
+    font-size: 16px;
+    font-weight: 550;
+    margin-top: 15px;
+    padding: 5px;
+    border: 2px solid rgb(247, 223, 8);
+    background-color: transparent ;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(247, 223, 8);
+
+}
+
 /* Specials section  */
 .specials{
     text-align: center;
@@ -83,7 +96,8 @@ span{
     color: rgb(247, 223, 8);
 }
 .special-items{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     align-items: center;
     justify-content: center;
     margin: 20px 0;
@@ -91,7 +105,7 @@ span{
 }
 .item{
     width: 250px;
-    height: 350px;
+    height: 400px;
     box-shadow: 10px 10px 10px gray;
     border-radius: 5px;
     margin: 0 20px;
@@ -100,7 +114,69 @@ span{
     padding-bottom: 10px;
 }
 .item-img{
-    width: 250px;
+    width: 100%;
     padding-bottom: 20px;
     border-radius: 5px;
+}
+
+
+/* Media Qurey */
+
+@media screen and (max-width:576px){
+
+
+    .nav-items{
+        padding: 30px 50px;
+    }
+
+    .nav-item{
+
+        font-size: 15px;
+        font-weight: 550;
+
+    }
+
+    .intro{
+        justify-content: center;
+        text-align: center;
+        padding-top: 60%;
+    }
+
+
+
+    .special-items{
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .item{
+        margin-bottom: 30px;
+        margin-left: 60px;
+    }
+
+}
+
+@media screen and (min-width:577px) and (max-width: 992px){
+
+    .nav-items{
+        padding: 30px 50px;
+    }
+
+    .intro{
+        justify-content: center;
+        text-align: center;
+        padding-top: 45%;
+    }
+
+    .special-items{
+        grid-template-columns: repeat(2,1fr);
+        
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item{
+        margin-bottom: 30px;
+    }
+
 }
