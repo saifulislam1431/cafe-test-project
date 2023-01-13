@@ -88,7 +88,7 @@
     margin: 50px;
 }
 
-.section-title{
+.section-title, .chef-title{
     padding: 30px;
     font-size: 35px;
     font-weight: 600;
@@ -121,7 +121,7 @@ span{
 
 
 /* Our Story section */
-.our-story{
+.our-story, .main-chef{
    display: flex;
    gap: 80px;
    padding: 8%;
@@ -191,11 +191,116 @@ span{
     font-size: 18px;
 }
 
+/* Desh Item */
+
+.desh-items{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+    
+}
+
+.desh-item{
+    width: 100%;
+}
+
+/* Main Chef */
+
+.main-chef{
+    text-align: left;
+   
+}
+.chef-img{
+    border-radius: 20px;
+    width: 25vw;
+
+}
+
+/* Footer */
+
+.footer{
+    background-color: #28282B;
+    height: 80vh; 
+}
+.footer-info{
+    
+    /* padding: 20px; */
+    padding-top:20px ;
+    padding-left:20px ;
+    padding-right:20px ;
+    display: flex;
+    gap: 200px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.reservation, .address, .opening{
+
+    margin-top: 100px;
+    
+
+}
+
+.footer-title {
+    font-size: 24px;
+    color: whitesmoke;
+    font-weight: 450;
+    text-align: center;
+    border-bottom: 1px solid rgb(247, 223, 8);
+    
+}
+
+.footer-description{
+    color: rgba(245, 245, 245, 0.726);
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-container{
+    margin: 50px auto;
+    text-align: center;
+}
+
+.form-title{
+    font-size: 24px;
+    color: whitesmoke;
+    font-weight: 450;
+    text-align: center;
+    margin-top: 90px;
+   
+}
+.form{
+    padding: 20px;
+}
+input[type="text"], input[type="email"]{
+    width: 350px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: #4c4c4d;
+}
+
+textarea{
+    margin: 20px 0;
+    width: 710px;
+    border: none;
+    background-color: #4c4c4d;
+}
+input::placeholder{
+    color: whitesmoke;
+}
+
+textarea::placeholder{
+    color: whitesmoke;
+    padding: 10px;
+}
 
 
 /* Media Query */
 
-@media screen and (max-width:576px){
+@media screen and (max-width:668px){
 
 
     .nav-items{
@@ -225,10 +330,10 @@ span{
         margin-left: 60px;
     }
 
-    .our-story{
+    .our-story, .main-chef{
         flex-direction: column;
     }
-    .res-img{
+    .res-img, .chef-img{
           width: 100%;
     }
     .startersAndMain, .dinnerAndDesert{
@@ -243,10 +348,34 @@ span{
         margin-bottom: 160px;
         font-size: 18px;
     }
+    
+.footer{
+    background-color: #28282B;
+    height: 110vh; 
+}
+    .footer-info{
+        flex-direction: column;
+       gap: 5px;
+    }
+
+    textarea{
+        
+        width: 350px;
+       
+    }
+
+    .desh-items{
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+    
+    .desh-item{
+        width: 100%;
+    }
 
 }
 
-@media screen and (min-width:577px) and (max-width: 992px){
+@media screen and (min-width:667px) and (max-width: 992px){
 
     .nav-items{
         padding: 30px 50px;
@@ -270,10 +399,10 @@ span{
         
     }
 
-    .our-story{
+    .our-story, .main-chef{
         flex-direction: column;
     }
-    .res-img{
+    .res-img, .chef-img{
           width: 80%;
     }
 
@@ -286,7 +415,32 @@ span{
         margin-top: 20px;
         margin-bottom: 170px;
         font-size: 18px;
+    
     }
+    .desh-items{
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+    
+    .desh-item{
+        width: 100%;
+    }
+
+    .footer{
+        background-color: #28282B;
+        height: 110vh; 
+    }
+        .footer-info{
+            flex-direction: column;
+           gap: 5px;
+        }
+    
+        textarea{
+            
+            width: 350px;
+           
+        }
+    
     
 
    
